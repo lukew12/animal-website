@@ -1,34 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Penguins</title>
-    <!-- <link rel="stylesheet" href="./styles.css"/> -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <img src="images/penguinCloseup.jpg" alt="A male Penguin" width="250" height="400" />
-    <h1>Penguins</h1>
-    <p>Penguins are small birds that can not fly, they are black and white.</p> 
-    <p>Here are links to other pages about other animals:</p>
-    <ul>
-      <li><a href="index.html">Tigers</a></li>
-      <li><a href="lions.html">Lions</a></li>
-      <li><a href="cheetahs.html">Cheetahs</a></li>
-      <li><a href="eagles.html">Eagles</a></li>
-    </ul>
-    <form>
-      <p>Add a new animal.</p>
-        <p>Animal:
-        <br />
-        <input type="text" name="New animal name" size="15" maxlength="30" />
-        </p>
-        <p>Description:
-        <br />
-        <textarea name="comments" cols="40" rows="10"></textarea>
-        </p>
-        <input type="submit" name="Submit" value="Submit" />
-    </form>
-    <p>This is a link to GitHub</p>
-    <a href="https://github.com/">GitHub</a>
+   <header>
+      <img class="logo" src="images/natgeo.jpg" alt="logo"/>
+    <nav>
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <label for="menu-toggle"><img src="images/Hamburger_icon.jpg" alt="toggle-icon" width="20" height="20"></label>
+        <ul class="hide-mobile" id="nav">
+          <li>HOME</li>
+          <li>CATERGORIES</li>
+          <li>ABOUT US</li>
+          <li>CONTACT US</li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+      <div class="animal-container-p">
+        <div class="animal-overlay"></div>
+        <div class="animal-content">
+          <img class="tiger-image" src="images/Little_penguins.jpg" alt="two little penguins" width="400" height="275">
+          <h1>PENGUINS</h1>
+        </div>
+      </div>
+      <div class="info">
+        <h2 class="info-title">INFO</h2>
+        <p class="info-context">Penguins are a group of aquatic flightless birds.
+          They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos penguin, 
+          found north of the equator. Highly adapted for life in the water, 
+          penguins have countershaded dark and white plumage, and their wings have evolved into flippers. 
+          Most penguins feed on krill, fish, squid and other forms of sea life which they catch while swimming underwater. 
+          They spend roughly half of their lives on land and the other half in the sea.</p>
+      </div>
+      <div class="example-add-container">
+          <div class="species">
+              <h3 class="species-title">SPECIES EXAMPLES</h3>
+              <ul class="species-context">
+                <li class="T">The Emperor Penguin</li>
+                <li class="A">The Chinstrap Penguin</li>
+                <li class="I">The White-Flippered Penguin</li>
+                <li class="S">The Magellanic Penguin</li>
+                <li class="M">The Yellow-Eyed Penguin</li>
+              </ul>
+          </div>
+          <div class="new-animal">  
+              <form>
+                <h3 class="new-animal-title">NEW ANIMAL</h3>
+                <div class="new-animal-context">
+                  <p>Animal:
+                  <br>
+                  <input type="text" name="New animal name" size="10" maxlength="30">
+                  </p>
+                  <p>Description:
+                  <br>
+                  <textarea name="comments" cols="30" rows="10"></textarea>
+                  </p>
+                  <label for="animal-photo">Image:</label>
+                  <input id="animal-photo" type="file" value="add-photo">
+                  <input type="submit" name="Submit" value="Submit">
+                </div>
+              </form>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div class="links">
+        <h4 class="links-title">LINKS</h4>
+        <ul class="links-context">
+          <li><a href="index.html">Tigers</a></li>
+          <li><a href="lions.html">Lions</a></li>
+          <li><a href="cheetahs.html">Cheetahs</a></li>
+          <li><a href="eagles.html">Eagles</a></li>
+        </ul>
+      </div>
+   </footer> 
   </body>
 </html>

@@ -66,6 +66,46 @@ div.animal-container {
   position: relative;
 }
 
+div.animal-container-c {
+  width: 100%;
+  background-image: url('images/Cheetah3.jpg');
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
+div.animal-container-e {
+  width: 100%;
+  background-image: url('images/Eagle.jpg');
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
+div.animal-container-l {
+  width: 100%;
+  background-image: url('images/african_lion_king-wide.jpg');
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
+div.animal-container-p {
+  width: 100%;
+  background-image: url('images/Little_penguins.jpg');
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  padding: 10px 0px;
+  position: relative;
+}
+
 .tiger-image {
   padding: 16px;
 }
@@ -80,7 +120,68 @@ div.animal-container div.animal-overlay {
   background-color: rgba(0,0,0,0.5)
 }
 
+div.animal-container-c div.animal-overlay {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.5)
+}
+
+div.animal-container-e div.animal-overlay {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.5)
+}
+
+div.animal-container-l div.animal-overlay {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.5)
+}
+
+div.animal-container-p div.animal-overlay {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0,0,0,0.5)
+}
+
+
 div.animal-container div.animal-content {
+  z-index: 10;
+  position: relative;
+}
+
+div.animal-container-c div.animal-content {
+  z-index: 10;
+  position: relative;
+}
+
+div.animal-container-e div.animal-content {
+  z-index: 10;
+  position: relative;
+}
+
+div.animal-container-l div.animal-content {
+  z-index: 10;
+  position: relative;
+}
+
+div.animal-container-p div.animal-content {
   z-index: 10;
   position: relative;
 }
@@ -230,6 +331,17 @@ nav ul li a {
    padding: 0px 5px;
  }
 
+ ul.links-context li a {
+  color: #000;
+  text-decoration: none;
+  padding: 40px 0px;
+ }
+
+ul.links-context li a:hover {
+  color: #fc0;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1025px) {
   nav ul.hide-mobile {
     margin: 0px;
@@ -273,10 +385,6 @@ nav ul li a {
   }
 
   ul.links-context li a {
-    color: #000;
-  }
-
-  ul.links-context li a:hover {
-    color: #fc0;
+    padding: none;
   }
 }

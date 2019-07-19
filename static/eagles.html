@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Eagles</title>
-    <!-- <link rel="stylesheet" href="./styles.css"/> -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <img src="images/Eagle.jpg" alt="A male Eagle" width="300" height="200" />
-    <h1>Eagles</h1>
-    <p>Eagles are Brave and Bold birds, they are indiginous to America and they are mostly black
-      and have accents of brown and white.</p> 
-    <p>Here are links to other pages about other animals:</p>
-    <ul>
-      <li><a href="penguins.html">Penguins</a></li>
-      <li><a href="lions.html">Lions</a></li>
-      <li><a href="cheetahs.html">Cheetahs</a></li>
-      <li><a href="index.html">Tigers</a></li>
-    </ul>
-    <form>
-      <p>Add a new animal.</p>
-        <p>Animal:
-        <br />
-        <input type="text" name="New animal name" size="15" maxlength="30" />
-        </p>
-        <p>Description:
-        <br />
-        <textarea name="comments" cols="40" rows="10"></textarea>
-        </p>
-        <input type="submit" name="Submit" value="Submit" />
-    </form>
-    <p>This is a link to GitHub</p>
-    <a href="https://github.com/">GitHub</a>
+   <header>
+      <img class="logo" src="images/natgeo.jpg" alt="logo"/>
+    <nav>
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <label for="menu-toggle"><img src="images/Hamburger_icon.jpg" alt="toggle-icon" width="20" height="20"></label>
+        <ul class="hide-mobile" id="nav">
+          <li>HOME</li>
+          <li>CATERGORIES</li>
+          <li>ABOUT US</li>
+          <li>CONTACT US</li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+      <div class="animal-container-e">
+        <div class="animal-overlay"></div>
+        <div class="animal-content">
+          <img class="tiger-image" src="images/Eagle.jpg" alt="A male Eagle" width="400" height="275">
+          <h1>EAGLES</h1>
+        </div>
+      </div>
+      <div class="info">
+        <h2 class="info-title">INFO</h2>
+        <p class="info-context">Eagles are large, powerfully built birds of prey, with heavy heads and beaks. 
+          Even the smallest eagles, such as the booted eagle (Aquila pennata), which is comparable in size to a common buzzard (Buteo buteo) or red-tailed hawk (B. jamaicensis),
+          have relatively longer and more evenly broad wings, and more direct, faster flight – despite the reduced size of aerodynamic feathers. Most eagles are larger than any other raptors apart from some vultures. The smallest species of eagle is the South Nicobar serpent eagle (Spilornis klossi), 
+          at 450 g (0.99 lb) and 40 cm (16 in). </p>
+      </div>
+      <div class="example-add-container">
+          <div class="species">
+              <h3 class="species-title">SPECIES EXAMPLES</h3>
+              <ul class="species-context">
+                <li class="T">The Steller's Sea Eagle</li>
+                <li class="A">The Philippine Eagle</li>
+                <li class="I">The Harpy Eagle</li>
+                <li class="S">The Bald Eagle (American)</li>
+                <li class="M">The White-Tailed Eagle</li>
+              </ul>
+          </div>
+          <div class="new-animal">  
+              <form>
+                <h3 class="new-animal-title">NEW ANIMAL</h3>
+                <div class="new-animal-context">
+                  <p>Animal:
+                  <br>
+                  <input type="text" name="New animal name" size="10" maxlength="30">
+                  </p>
+                  <p>Description:
+                  <br>
+                  <textarea name="comments" cols="30" rows="10"></textarea>
+                  </p>
+                  <label for="animal-photo">Image:</label>
+                  <input id="animal-photo" type="file" value="add-photo">
+                  <input type="submit" name="Submit" value="Submit">
+                </div>
+              </form>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div class="links">
+        <h4 class="links-title">LINKS</h4>
+        <ul class="links-context">
+          <li><a href="penguins.html">Penguins</a></li>
+          <li><a href="lions.html">Lions</a></li>
+          <li><a href="cheetahs.html">Cheetahs</a></li>
+          <li><a href="index.html">Tigers</a></li>
+        </ul>
+      </div>
+   </footer> 
   </body>
 </html>

@@ -1,34 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Lions</title>
-    <!-- <link rel="stylesheet" href="./styles.css"/> -->
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <img src="images/african_lion_king-wide.jpg" alt="A male Lion" width="300" height="200" />
-    <h1>Lions</h1>
-    <p>Lions are Big Mighty Beasts, they are golden with a rather large frill around their neck.</p> 
-    <p>Here are links to other pages about other animals:</p>
-    <ul>
-      <li><a href="penguins.html">Penguins</li>
-      <li><a href="index.html">Tigers</a></li>
-      <li><a href="cheetahs.html">Cheetahs</a></li>
-      <li><a href="eagles.html">Eagles</a></li>
-    </ul>
-    <form>
-      <p>Add a new animal.</p>
-        <p>Animal:
-        <br />
-        <input type="text" name="New animal name" size="15" maxlength="30" />
-        </p>
-        <p>Description:
-        <br />
-        <textarea name="comments" cols="40" rows="10"></textarea>
-        </p>
-        <input type="submit" name="Submit" value="Submit" />
-    </form>
-    <p>This is a link to GitHub</p>
-    <a href="https://github.com/">GitHub</a>
+   <header>
+      <img class="logo" src="images/natgeo.jpg" alt="logo"/>
+    <nav>
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+        <label for="menu-toggle"><img src="images/Hamburger_icon.jpg" alt="toggle-icon" width="20" height="20"></label>
+        <ul class="hide-mobile" id="nav">
+          <li>HOME</li>
+          <li>CATERGORIES</li>
+          <li>ABOUT US</li>
+          <li>CONTACT US</li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+      <div class="animal-container-l">
+        <div class="animal-overlay"></div>
+        <div class="animal-content">
+          <img class="tiger-image" src="images/african_lion_king-wide.jpg" alt="A male Lion" width="400" height="275">
+          <h1>LIONS</h1>
+        </div>
+      </div>
+      <div class="info">
+        <h2 class="info-title">INFO</h2>
+        <p class="info-context">The lion (Panthera leo) is a species in the family Felidae; it is a muscular, 
+          deep-chested cat with a short, rounded head, a reduced neck and round ears, and a hairy tuft at the end of its tail. 
+          The lion is sexually dimorphic; males are larger than females with a typical weight range of 150 to 250 kg (330 to 550 lb) 
+          for males and 120 to 182 kg (265 to 400 lb) for females. Male lions have a prominent mane,
+          which is the most recognisable feature of the species. Lions are social, forming groups called prides. 
+          A lion pride consists of a few adult males, related females and cubs. 
+          Groups of female lions typically hunt together, preying mostly on large ungulates. 
+          The species is an apex and keystone predator, although they scavenge when opportunities occur.
+          Some lions have been known to hunt humans, although the species typically does not.</p>
+      </div>
+      <div class="example-add-container">
+          <div class="species">
+              <h3 class="species-title">SPECIES EXAMPLES</h3>
+              <ul class="species-context">
+                <li class="T">The Asiatic Lion</li>
+                <li class="A">The Barbary Lion</li>
+                <li class="I">The Cape Lion (Extinct)</li>
+              </ul>
+          </div>
+          <div class="new-animal">  
+              <form>
+                <h3 class="new-animal-title">NEW ANIMAL</h3>
+                <div class="new-animal-context">
+                  <p>Animal:
+                  <br>
+                  <input type="text" name="New animal name" size="10" maxlength="30">
+                  </p>
+                  <p>Description:
+                  <br>
+                  <textarea name="comments" cols="30" rows="10"></textarea>
+                  </p>
+                  <label for="animal-photo">Image:</label>
+                  <input id="animal-photo" type="file" value="add-photo">
+                  <input type="submit" name="Submit" value="Submit">
+                </div>
+              </form>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div class="links">
+        <h4 class="links-title">LINKS</h4>
+        <ul class="links-context">
+          <li><a href="penguins.html">Penguins</a></li>
+          <li><a href="index.html">Tigers</a></li>
+          <li><a href="cheetahs.html">Cheetahs</a></li>
+          <li><a href="eagles.html">Eagles</a></li>
+        </ul>
+      </div>
+   </footer> 
   </body>
 </html>
